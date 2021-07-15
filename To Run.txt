@@ -1,0 +1,25 @@
+
+
+
+To compile command : 
+g++ -o "B+Tree.exe" "B+ Tree.cpp" "display.cpp" "insertion.cpp" "remove.cpp" "search.cpp" "utilFunc.cpp"
+
+To Run command : B+Tree.exe
+
+Features Added/Fixed : 
+1. Fixed logic of deleting a key which is not present.(Previously would delete a key lesser than the value given if the value is not present).
+2. Searching didn't make use of the file data pointer to access file after finding the element in the tree. Fixed the code to make use of this data pointer.
+3. Changed Search method flow to enable reuse of search while using import.
+4. Added Import Option to import bulk records.
+5. Fixed Crashes when printing sequentially when tree is empty.
+6. Fixed Deletion of file bug(Happened because the file was open in the data pointer of tree)
+
+
+Unfixed Bugs Currently : 
+None
+
+
+
+To-Do : 
+1.What sir said is impossible to do. With Import option. Since what if we wanted to import 2 files? What if you have 50 records split in 2 files and You need all 50 inside the B+ Tree? How till you handle where each new record goes? If you have a master file,then you can only implement "import" option by copying all these records to the master file while inserting to a B+ Tree,Now this is not the ideal way,because you need to keep both files open,Copy character by character and traverse both the files. 
+In current condition,We only Traverse once. And Since Instead of Master File,We have a Master folder,We don't have to Traverse the folder and copy anything. We just want the user to store his record files in the master folder and the program will import them.
