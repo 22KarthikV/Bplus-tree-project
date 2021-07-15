@@ -81,10 +81,14 @@ We have followed 2nd method which was comparatively easy to implement with relat
 here is the complete algorithm for [reference](http://www.cburch.com/cs/340/reading/btree/index.html?fbclid=IwAR0QFRcpIVL19PdMtZU0-wG18f-rwGS4lNvzpEAsdaZCL7BrNRBuFffiPJ0)
 
 Descend to the leaf node where leaf fits :
+
 a.	If the node has empty space, insert the key/reference pair into the node and We are DONE!
+
 b.	If the node is already full, split it into two nodes, distributing the keys evenly. 
+
 	i.	If the node is leaf,take the copy of minimum in the second node and repeat this algorithm to 
 		insert it in parent node.
+		
 	ii.	If the node is non-leaf, exclude the middle value during split and insert the excluded value into 
 		the	parent.
 
