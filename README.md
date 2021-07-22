@@ -48,6 +48,7 @@ also enables inserting of multiple existing records into the B+ Tree at the same
 
 1. B+ Tree Unlike B Tree is defined by two order values one for leaf node and another for non-leaf node.
 	Minimum 50% should hold on B+ Tree Node.
+	
 	a.	For Non-Leaf Nodes-
 		i.	ceil(maxInternalLimit/2)<= #of children <= maxInternalLimit
 		ii.	ceil(maxInternalLimit/2)-1<= #of keys <= maxInternalLimit-1
