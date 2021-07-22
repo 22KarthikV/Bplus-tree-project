@@ -225,7 +225,7 @@ void BPTree::removeInternal(int x, Node* cursor, Node* child) {
 		.resize(cursor->ptr2TreeOrData.ptr2Tree.size()-1);
 
 	// If there is No underflow. Phew!!
-	if (cursor->keys.size() >= (getMaxIntChildLimit() + 1) / 2 - 1) {
+	if ((cursor->keys.size() >= (getMaxIntChildLimit() + 1) / 2 - 1)||(cursor==root)) {
 		cout << "Deleted " << x << " from internal node successfully\n";
 		return;
 	}
