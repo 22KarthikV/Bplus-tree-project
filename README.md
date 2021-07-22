@@ -9,7 +9,15 @@ Implementing B+ tree using C++
 
 ## Usage :
 
-Read the "To Run.txt" for details regarding how to compiler and run.
+1. 	Make sure you have gcc compiler installed.Open cmd or terminal in the project folder.
+
+2. 	Run the following commands :
+
+3. 	To compile command (Not necessary unless you change the code): 
+  	g++ -o "B+Tree.exe" "B+ Tree.cpp" "display.cpp" "insertion.cpp" "remove.cpp" "search.cpp" "utilFunc.cpp"
+
+4. 	To Run command : B+Tree.exe
+
 
 
 
