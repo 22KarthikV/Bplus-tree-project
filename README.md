@@ -6,6 +6,7 @@ here : https://github.com/Vivek2k20/B_Plus_Tree_GUI
 - [x] Search 
 - [X] Insert
 - [X] Delete
+- [X] Print
 - [X] Structuring the main Function
 
 
