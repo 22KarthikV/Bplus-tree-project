@@ -182,6 +182,7 @@ void searchMethod(BPTree* bPTree) {
             printf("%c", ch);
             ch = fgetc(cursor->ptr2TreeOrData.dataPtr[idx]);
         };
+		fseek(cursor->ptr2TreeOrData.dataPtr[idx], 0, SEEK_SET);
 		cout<<endl;
 	};
 }
