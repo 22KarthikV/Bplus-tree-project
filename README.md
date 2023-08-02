@@ -1,7 +1,5 @@
 # B+ Tree
 Implementing B+ tree using C++.This is a CLI Version which is easy to open,compile and run.
-A GUI Version of the same using Winforms of .NET Framework has also been developed. You can view the project
-here : https://github.com/Vivek2k20/B_Plus_Tree_GUI
 - [X] Import
 - [x] Search 
 - [X] Insert
